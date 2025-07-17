@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Enter filename: " file
+chmod +x "$file"
+echo "Executable permission granted to '$file'."
+

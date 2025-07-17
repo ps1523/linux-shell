@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Display all running processes
+ps aux
+
+# Display the top 5 processes by memory usage
+echo -e "\nTop 5 processes by memory usage:"
+ps aux --sort=-%mem | head -n 6

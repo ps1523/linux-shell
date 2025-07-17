@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Enter filename: " file
+cat "$file"
+
+echo "File '$file' displayed successfully."

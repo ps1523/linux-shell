@@ -1,0 +1,10 @@
+#!/bin/bash
+# Find the largest file in a given directory
+
+if [ -z "$1" ]; then
+  echo "Please provide a directory path."
+  exit 1
+fi
+
+largest_file=$(find "$1" -type f -exec du -h {} + | sort -rh | head -n 1)
+echo "Largest file: $largest_file"

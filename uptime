@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Display the system uptime
+echo "System Uptime: $(uptime -p)"
+
+# Display the current load averages
+echo "Load Averages: $(uptime | awk -F'load average:' '{ print $2 }')"

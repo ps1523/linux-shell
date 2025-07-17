@@ -1,0 +1,15 @@
+#!/bin/bash
+# Count the number of files with a specific extension
+
+if [ -z "$1" ]; then
+  echo "Please provide a directory."
+  exit 1
+fi
+
+if [ -z "$2" ]; then
+  echo "Please provide a file extension (e.g., txt)."
+  exit 1
+fi
+
+file_count=$(find "$1" -type f -name "*.$2" | wc -l)
+echo "Number of .$2 files in $1: $file_count"

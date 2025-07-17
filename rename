@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter current filename: " old_name
+read -p "Enter new filename: " new_name
+mv "$old_name" "$new_name"

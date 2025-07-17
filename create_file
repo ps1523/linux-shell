@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter filename: " file
+touch "$file"
+echo "File '$file' created successfully."
